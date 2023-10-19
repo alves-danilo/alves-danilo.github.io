@@ -1,0 +1,49 @@
+
+/* Style for the projects section */
+/* Style for the projects section */
+#projects {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style for each project container */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style for each project tile */
+.project-tile {
+    width: 48%; /* Two projects per row with a small gap between them */
+    margin-bottom: 20px; /* Space between rows */
+    background-color: #f5f5f5; /* Optional background color for each tile */
+    border: 1px solid #ccc; /* Optional border */
+}
+
+/* Style for the iframe container */
+.iframe-container {
+    padding: 20px;
+}
+
+/* Style for the iframe itself */
+iframe {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+}
+
+/* Style for the project description container */
+.project-description {
+    padding: 20px;
+}
+
+/* Style for the project title */
+.project-description h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for the project description text */
+.project-description p {
+    font-size: 14px;
+}
