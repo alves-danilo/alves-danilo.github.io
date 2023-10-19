@@ -60,30 +60,16 @@ li {
     color: #888;
 }
 
-/* Navigation menu */
-
+/* Font styles for the navigation bar */
 .navbar {
-    background-color: #242582; /* Dark Blue Background */
+    font-family: "Segoe UI", Segoe UI; /* Specify your preferred font */
+    font-size: 26px; /* Adjust the font size */
 }
 
-.navbar .navbar-brand {
-    color: #f8f9fa !important; /* Light Gray Brand Text */
-    font-size: 20px !important; /* Set the brand font size to 20px */
+.navbar a {
+    color: #333; /* Set the text color for the links */
 }
 
-.navbar .navbar-brand:hover {
-    color: #007bff !important; /* Blue Hover Color for Brand Text */
-}
-
-.navbar .navbar-nav .nav-link {
-    color: #f8f9fa !important; /* Light Gray Nav Link Text */
-    font-size: 20px !important; /* Set the nav link font size to 20px */
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: #007bff !important; /* Blue Hover Color for Nav Link Text */
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    background-color: #f8f9fa !important; /* Light Gray Background on Hover */
+.navbar a:hover {
+    color: #007bff; /* Set the text color on hover */
 }
