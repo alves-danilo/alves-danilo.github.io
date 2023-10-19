@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link to your external CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-light" href="index.html">Home</a>
+        <a class="navbar-light" href="portfolio.html">Portfolio</a>
+        <a class="navbar-light" href="pbireport01.html">Power BI Report 01</a>
+        <a class="navbar-light" href="test.html">Test Page</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
+
+    <form id="experience-form">
+        <input type="hidden" id="entry-id">
+        <div class="form-group">
+            <label for="job-title">Job Title:</label>
+            <input type="text" class="form-control" id="job-title" required>
+        </div>
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <input type="text" class="form-control" id="company" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="text" class="form-control" id="date" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-button">Add Entry</button>
+    </form>    
+ 
+</body>
+</html>
