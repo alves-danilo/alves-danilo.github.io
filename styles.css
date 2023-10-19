@@ -60,20 +60,6 @@ li {
     color: #888;
 }
 
-/* Font styles for the navigation bar */
-.navbar {
-    font-family: "Segoe UI", Segoe UI; /* Specify your preferred font */
-    font-size: 26px; /* Adjust the font size */
-}
-
-.navbar a {
-    color: #333; /* Set the text color for the links */
-}
-
-.navbar a:hover {
-    color: #007bff; /* Set the text color on hover */
-}
-
 .work-experience {
     margin: 20px 0;
     padding: 10px;

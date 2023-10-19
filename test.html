@@ -1,99 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Link to your external CSS file -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-</head>
-<body>
 
-    <!-- Navigation Menu -->
-    <nav class="navbar navbar-dark" style="background-color: #e3f2fd;">
-        <a class="navbar-light" href="index.html">Home</a>
-        <a class="navbar-light" href="portfolio.html">Portfolio</a>
-        <a class="navbar-light" href="pbireport01.html">Power BI Report 01</a>
-        <a class="navbar-light" href="test.html">Test Page</a>
-        <!-- Add more navigation links as needed -->
-    </nav>
-
-    <section id="header">
-        <img src="https://media.licdn.com/dms/image/C4E03AQGRJT-k4AEq1g/profile-displayphoto-shrink_200_200/0/1640259596682?e=1703116800&v=beta&t=3rp0eG3P4q8cvKAlcpvHgNRxMiS7cCI1ApNeJkcivjE" alt="Your Profile Picture" width="100">
-        <h1>Danilo Alves</h1>
-        <p>Group Controller at Aker Horizons</p>
-        <p><i class="fas fa-envelope"></i> danilo.alves@outlook.com.br</p>
-        <p><i class="fas fa-phone"></i> +47 413 94 089</p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/daniloalvesluiz" target="_blank">Profile</a></p>
-    </section>    
-
-    <section id="resume">
-        <h2>Experience</h2>
-
-        <div id="experience">
-            <!-- Work Experience will be displayed here -->
-        </div>
-
-      <!-- Add margin to create space between sections -->
-      <div class="mt-4"></div>
-    
-        <!-- Education cards go here -->
-    
-        <h2>Education</h2>
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">University ABC</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Bachelor of Science in Computer Science</h6>
-                    <p class="card-text">2014 - 2018</p>
-                </div>
-            </div>
-            <!-- Add more cards for additional educational experiences -->
-        </div>
-    </section>
-
-        <!-- Experience data -->
-        <script>
-        // Fetch the JSON data
-        fetch('experience.json')
-            .then(response => response.json())
-            .then(data => {
-                const experienceDiv = document.getElementById('experience');
-    
-                // Loop through the data and create elements for each work experience entry
-                data.forEach(entry => {
-                    const workExperience = document.createElement('div');
-                    workExperience.classList.add('work-experience');
-    
-                    const title = document.createElement('h3');
-                    title.textContent = entry.jobTitle;
-    
-                    const company = document.createElement('p');
-                    company.textContent = entry.company;
-    
-                    const date = document.createElement('p');
-                    date.textContent = entry.date;
-    
-                    const description = document.createElement('p');
-                    description.textContent = entry.description;
-    
-                    workExperience.appendChild(title);
-                    workExperience.appendChild(company);
-                    workExperience.appendChild(date);
-                    workExperience.appendChild(description);
-    
-                    experienceDiv.appendChild(workExperience);
-                });
-            })
-            .catch(error => console.error('Error fetching data:', error));
-    </script>
-  
-</body>
-</html>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>

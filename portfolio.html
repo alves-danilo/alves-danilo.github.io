@@ -17,13 +17,31 @@
     <body>
 
     <!-- Navigation Menu -->
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-light" href="index.html">Home</a>
-        <a class="navbar-light" href="portfolio.html">Portfolio</a>
-        <a class="navbar-light" href="pbireport01.html">Power BI Report 01</a>
-        <a class="navbar-light" href="test.html">Test Page</a>
-        <!-- Add more navigation links as needed -->
-    </nav>   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Danilo Alves</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Power BI reports
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="pbireport01.html">Report XXXX</a>
+                <a class="dropdown-item" href="pbireport02.html">Report XXXX</a>
+                <a class="dropdown-item" href="pbireport03.html">Report XXXX</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>  
 
         <section id="portfolio">
             <h1>My Portfolio</h1>
