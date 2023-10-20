@@ -76,3 +76,16 @@ li {
 .work-experience p {
     margin: 5px 0;
 }
+
+.horizontal-header {
+    display: flex; /* Use Flexbox to make children display horizontally */
+    align-items: center; /* Center vertically within the section */
+}
+
+.header-content {
+    margin-left: 20px; /* Add some space between the image and content */
+}
+
+.footer-bg {
+    background-color: #253327;
+}
